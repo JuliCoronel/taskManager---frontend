@@ -128,7 +128,7 @@ function App() {
 
     <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4'>
       {Array.isArray(tareas) && tareas.length > 0 ? (
-        tareas.reverse().map(tarea => (
+        tareas.map(tarea => (
           <li key={tarea._id} className='flex bg-lilac-300 p-3 rounded-lg shadow-md min-h-[60px]'>
             <input 
               type="checkbox" 
